@@ -8,8 +8,8 @@ function m() {
    return r;
 }
 
-if (location.host != "chrome.google.com" || !location.pathname.startsWith("/webstore")) {
-    location.href = "https://chrome.google.com/webstore" + m();
+if (location.host != "chromewebstore.google.com") {
+    location.href = "https://chromewebstore.google.com/" + m();
 }
 
 document.head.innerHTML = `
